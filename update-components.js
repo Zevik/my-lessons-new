@@ -64,7 +64,7 @@ export default App
 
     // יצירת imports
     const imports = componentNames
-        .map(name => `import ${name} from './components/${name}'`)
+        .map(name => `import ${name} from './components/${name}.jsx'`)
         .join('\n');
 
     // יצירת רשימת קומפוננטות להצגה

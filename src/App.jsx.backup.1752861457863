@@ -1,5 +1,4 @@
-import CarnismWhyWeEatCertainAnimalsNotOthers from './components/CarnismWhyWeEatCertainAnimalsNotOthers.jsx'
-import EvolutionTheAmazingStoryOfLife from './components/EvolutionTheAmazingStoryOfLife.jsx'
+import CarnismWhyWeEatCertainAnimalsNotOthers from './components/CarnismWhyWeEatCertainAnimalsNotOthers'
 import './App.css'
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
       
       <main className="space-y-12">
         <CarnismWhyWeEatCertainAnimalsNotOthers key="0" />
-        <EvolutionTheAmazingStoryOfLife key="1" />
       </main>
       
       <footer className="text-center py-8 text-gray-500">
