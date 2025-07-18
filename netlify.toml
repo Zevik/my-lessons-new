@@ -1,0 +1,15 @@
+# Build settings for Netlify
+
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Optional: Set Node.js version
+[build.environment]
+  NODE_VERSION = "18"
+
+# Optional: Redirect rules for SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
