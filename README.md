@@ -28,6 +28,9 @@ npm run build
 
 # תצוגה מקדימה של הבנייה
 npm run preview
+
+# עדכון אוטומטי של כל הקומפוננטות ב-App.jsx
+npm run update-components
 ```
 
 ## מבנה הפרויקט
@@ -109,8 +112,21 @@ export default [שם הרכיב];
 1. צרו branch חדש לשיעור שלכם
 2. פתחו קובץ רכיב חדש ב `src/components/`
 3. עקבו אחר התבנית הבסיסית
-4. הוסיפו את הרכיב ל `App.jsx`
+4. הפעילו `npm run update-components` (במקום עדכון ידני)
 5. בדקו שהכל עובד באמצעות `npm run dev`
+
+## 🔄 עדכון אוטומטי של קומפוננטות
+הפרויקט כולל סקריפט חכם שמעדכן אוטומטית את `App.jsx`:
+```bash
+npm run update-components
+```
+הסקריפט:
+- סורק את כל הקבצים ב-`src/components/`
+- יוצר imports אוטומטיים
+- מעדכן את App.jsx עם כל הקומפוננטות
+- יוצר גיבוי של הגרסה הקודמת
+
+לפרטים נוספים: `SCRIPT-README.md`
 
 ## טיפים לפיתוח
 - השתמשו ב **useState** לניהול מצב מקומי
